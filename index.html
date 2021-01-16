@@ -11,14 +11,14 @@
         body {
             margin: 0;
         }
-        section {
-            width: 700px;
-        }
         figcaption {
             text-align: center;
         }
         img {
             align-items: center;
+        }
+        .videos {
+            display: none;
         }
     </style>
 </head>
@@ -49,6 +49,58 @@
             <img src="./img/banana.jpg" alt="Imagen de banana">
             <figcaption>Es una imagen de un platano</figcaption>
         </figure>
+    </section>
+    <section class="videos">
+        <video controls preload="auto">
+            <source src=".m4v#t=10,60" />
+            <source src=".mp4#t=10,60" />
+        </video>
+    </section>
+    <section class="forms">
+        <form action="">
+            <label for="nombre">
+                <span>Cual es tu nombre?</span>
+                <input type="text" id="nombre" placeholder="Nombre">
+            </label>
+            <label for="inicio-platzi">
+                <span>Que dia comenzaste en platzi?</span>
+                <input type="date" id="inicio-platzi">
+            </label>
+            <label for="horario">
+                <span>En que horario estudias?</span>
+                <input type="time" id="horario">
+            </label>
+        </form>
+    </section>
+    <section>
+        <form action="">
+            <label for="hora">
+                <span>Hora</span>
+                <input type="time" id="hora" name="hora">
+            </label>
+            <label for="dia">
+                <span>Dia</span>
+                <input type="date" id="dia" name="dia">
+            </label>
+            <label for="semana">
+                <span>Semana</span>
+                <input type="week" id="semana" name="semana">
+            </label>
+            <label for="mes">
+                <span>Mes</span>
+                <input type="month" id="mes" name="mes">
+            </label>
+            <input type="submit">
+        </form>
+    </section>
+    <section>
+        <form action="">
+            <label for="calendario">
+                <span>Calendario</span>
+                <input type="datetime-local" id="calendario" name="calendario">
+            </label>
+            <input type="submit">
+        </form>
     </section>
 </body>
 </html>
