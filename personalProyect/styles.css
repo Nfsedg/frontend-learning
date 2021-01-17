@@ -1,0 +1,31 @@
+/* * {
+    box-sizing: border-box;
+} */
+body {
+    margin: 0;
+}
+.header {
+    background-color: #33D4FF;
+    height: 65px;
+}
+.header__nav--items {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px;
+    padding: 20px 0;
+}
+.header__nav--items > li {
+    margin: 0 10px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+main {
+    width: 100%;
+}
+.persentation > img {
+    width: 100%;
+    margin: 0;
+}
